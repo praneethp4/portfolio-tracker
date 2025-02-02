@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8080/api/stocks';
+const API_URL = 'https://portfolio-tracker-backend.onrender.com/api/stocks';
 
 export const getStocks = () => axios.get(API_URL);
 export const addStock = (stock) => axios.post(API_URL, stock);
